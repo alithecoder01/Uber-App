@@ -4,10 +4,8 @@ import Home from "./screens/HomeScreen/Home";
 
 const App = () => {
   return (
-    <SafeAreaView>
-      <View>
-        <Home />
-      </View>
+    <SafeAreaView style={{flex:1}}>
+      <Home />
     </SafeAreaView>
   );
 };
