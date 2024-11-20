@@ -1,9 +1,10 @@
-import { ScaledSheet } from "react-native-size-matters";
+import { ScaledSheet, vs } from "react-native-size-matters";
 
 export default ScaledSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignSelf: "center",
+    backgroundColor: "white",
+    paddingVertical: vs(5),
+    paddingHorizontal: vs(10),
   },
 });
