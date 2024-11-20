@@ -2,6 +2,7 @@ import { Text, FlatList, TouchableOpacity, Image, View } from "react-native";
 import React from "react";
 import styles from "./styles";
 import { Icon } from "react-native-elements";
+import tw from "tailwind-react-native-classnames";
 
 const ServiceOptions = () => {
   const data = [
@@ -27,7 +28,13 @@ const ServiceOptions = () => {
           <View style={styles.content}>
             <Image style={styles.image} source={{ uri: item.image }} />
             <Text style={styles.title}>{item.title}</Text>
-            <Icon style={styles.icon} type="antdesign" name={"arrowright"} color="white" />
+
+            <Icon
+              style={tw`p-2 bg-black mt-4 rounded-full w-10`}
+              type="antdesign"
+              name={"arrowright"}
+              color="white"
+            />
           </View>
         </TouchableOpacity>
       )}

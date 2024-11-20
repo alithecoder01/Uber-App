@@ -28,7 +28,7 @@ export default ScaledSheet.create({
   },
   icon: {
     padding: vs(2),
-    marginTop: vs(4),
+   margin: vs(5),
     backgroundColor: "black",
     width: s(24),
     borderRadius: 50,
