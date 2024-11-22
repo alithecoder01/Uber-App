@@ -17,7 +17,6 @@ export default ScaledSheet.create({
     borderRadius: 10,
   },
   content: {
-    // alignItems: "center",
     padding: vs(4),
   },
   title: {
@@ -27,10 +26,11 @@ export default ScaledSheet.create({
     fontWeight: "semibold",
   },
   icon: {
-    padding: vs(2),
-   margin: vs(5),
+    padding: s(8),
     backgroundColor: "black",
-    width: s(24),
-    borderRadius: 50,
+    marginTop: vs(16),
+    borderRadius: 9999,
+    width: s(36),
+    height: s(36),
   },
 });
