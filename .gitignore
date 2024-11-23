@@ -34,3 +34,6 @@ yarn-error.*
 .env
 # typescript
 *.tsbuildinfo
+
+# eslint
+eslint.config.mjs
