@@ -1,12 +1,10 @@
+import React from 'react';
 import { View } from 'react-native';
 
-import React from 'react';
+import Logo from '../../components/logo/Logo';
+import ServiceOptions from '../../components/serviceOptions/ServiceOptions';
 
 import styles from './styles';
-
-import Logo from '../../components/logo/Logo';
-
-import ServiceOptions from '../../components/serviceOptions/ServiceOptions';
 
 const Home = () => {
   return (

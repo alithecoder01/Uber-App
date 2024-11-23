@@ -1,10 +1,9 @@
-import { Text, FlatList, TouchableOpacity, Image, View } from 'react-native';
-
 import React from 'react';
-
-import styles from './styles';
+import { FlatList, Image, Text, TouchableOpacity, View } from 'react-native';
 
 import { Icon } from 'react-native-elements';
+
+import styles from './styles';
 
 const ServiceOptions = () => {
   const data = [

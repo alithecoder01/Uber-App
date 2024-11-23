@@ -1,4 +1,4 @@
-import { create } from "zustand";
+import { create } from 'zustand';
 
 interface Location {
   latitude: number | undefined;
@@ -9,13 +9,13 @@ interface UserStore {
   userName: string;
   currentLocation: Location;
   destination: Location;
-  history: Array<Object>;
+  history: Array<object>;
   setUserName: (userName: string) => void;
   setCurrentLocation: (currentLocation: Location) => void;
   setDestination: (destination: Location) => void;
 }
 const userStore = create<UserStore>()((set) => ({
-  userName: "",
+  userName: '',
   currentLocation: { latitude: undefined, longitude: undefined },
   destination: { latitude: undefined, longitude: undefined },
   history: [],
