@@ -8,7 +8,7 @@ import AppStack from './src/stack/AppStack';
 const App = () => {
   return (
     <NavigationContainer>
-      <SafeAreaView style={[styles.container, { backgroundColor: 'red' }]}>
+      <SafeAreaView style={styles.container}>
         <AppStack />
       </SafeAreaView>
     </NavigationContainer>
