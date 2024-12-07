@@ -1,0 +1,6 @@
+{
+  "type": "module",
+  "devDependencies": {
+    "@types/react-native-dotenv": "^0.2.2"
+  }
+}
