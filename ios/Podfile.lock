@@ -1,4 +1,11 @@
 PODS:
+  - AmplifyRTNCore (1.1.6):
+    - RCT-Folly
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Codegen
+    - React-Core
+    - ReactCommon/turbomodule/core
   - boost (1.84.0)
   - DoubleConversion (1.1.6)
   - EXConstants (17.0.3):
@@ -78,6 +85,7 @@ PODS:
     - React-RCTText (= 0.76.2)
     - React-RCTVibration (= 0.76.2)
   - React-callinvoker (0.76.2)
+  - React-Codegen (0.1.0)
   - React-Core (0.76.2):
     - glog
     - hermes-engine
@@ -1610,6 +1618,27 @@ PODS:
     - React-logger (= 0.76.2)
     - React-perflogger (= 0.76.2)
     - React-utils (= 0.76.2)
+  - RNCAsyncStorage (1.23.1):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.01.01.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
   - RNScreens (4.3.0):
     - DoubleConversion
     - glog
@@ -1680,6 +1709,7 @@ PODS:
   - Yoga (0.0.0)
 
 DEPENDENCIES:
+  - "AmplifyRTNCore (from `../node_modules/@aws-amplify/react-native`)"
   - boost (from `../node_modules/react-native/third-party-podspecs/boost.podspec`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - EXConstants (from `../node_modules/expo-constants/ios`)
@@ -1752,15 +1782,19 @@ DEPENDENCIES:
   - React-utils (from `../node_modules/react-native/ReactCommon/react/utils`)
   - ReactCodegen (from `build/generated/ios`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - "RNCAsyncStorage (from `../node_modules/@react-native-async-storage/async-storage`)"
   - RNScreens (from `../node_modules/react-native-screens`)
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
   trunk:
+    - React-Codegen
     - SocketRocket
 
 EXTERNAL SOURCES:
+  AmplifyRTNCore:
+    :path: "../node_modules/@aws-amplify/react-native"
   boost:
     :podspec: "../node_modules/react-native/third-party-podspecs/boost.podspec"
   DoubleConversion:
@@ -1902,6 +1936,8 @@ EXTERNAL SOURCES:
     :path: build/generated/ios
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  RNCAsyncStorage:
+    :path: "../node_modules/@react-native-async-storage/async-storage"
   RNScreens:
     :path: "../node_modules/react-native-screens"
   RNVectorIcons:
@@ -1910,6 +1946,7 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
+  AmplifyRTNCore: 4a338e0325ac32e9f4fd8356d712f6f3aea7532d
   boost: 1dca942403ed9342f98334bf4c3621f011aa7946
   DoubleConversion: f16ae600a246532c4020132d54af21d0ddb2a385
   EXConstants: dd2fe64c6cdb1383b694c309a63028a8e9f2be6d
@@ -1929,6 +1966,7 @@ SPEC CHECKSUMS:
   RCTTypeSafety: 30e36ceafa26979860e13fb3f234fb61692924c2
   React: 10ad41b51f981992714011b6a4e081234c28dc2e
   React-callinvoker: 58b51494f8b2cca07a27fc6f69273239c30a1e70
+  React-Codegen: 4b8b4817cea7a54b83851d4c1f91f79aa73de30a
   React-Core: 54860c16fb5873a6f00dd44d8979bbb648b34c7c
   React-CoreModules: 443101f113a7b5d51b93e061574dcadf7850f8cc
   React-cxxreact: 5407ecb854a755de34c0e6b03965d3a51c28c933
@@ -1980,6 +2018,7 @@ SPEC CHECKSUMS:
   React-utils: ed6cb7ba089ac0856aa104df12691e99abbf14e1
   ReactCodegen: 93b271af49774429f34d7fd561197020d86436e2
   ReactCommon: 208cb02e3c0bb8a727b3e1a1782202bcfa5d9631
+  RNCAsyncStorage: a927b768986f83467b635cf6d7559e6edb46db7a
   RNScreens: 44a3e358d5ccd7815c5ae9148988c562826992b2
   RNVectorIcons: 07792a9538e8577c1263fcad187712e90d65d8fb
   SocketRocket: d4aabe649be1e368d1318fdf28a022d714d65748
